@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Para Milagros — Una carta</title>
+  <style>
+    :root{
+      --bg1:#ffeef6; /* rosa pastel */
+      --bg2:#fff8f4; /* blanco cálido */
+      --accent:#d4af7f; /* dorado suave */
+      --text:#4b2b2b;
+      --muted:#7b5b63;
+    }
+    html,body{height:100%;margin:0;font-family: 'Georgia', serif;background:linear-gradient(135deg,var(--bg1),var(--bg2));color:var(--text);}
+    .container{max-width:780px;margin:48px auto;padding:36px;background:rgba(255,255,255,0.6);border-radius:18px;box-shadow:0 10px 30px rgba(40,20,20,0.08);backdrop-filter:blur(6px);border:1px solid rgba(212,175,127,0.12)}
+    header{display:flex;align-items:center;gap:18px}
+    .badge{width:84px;height:84px;background:radial-gradient(circle at 30% 20%, #fff, rgba(255,255,255,0.6));border-radius:999px;display:flex;align-items:center;justify-content:center;font-size:28px;color:var(--accent);box-shadow:0 6px 18px rgba(212,175,127,0.12);}
+    h1{margin:0;font-size:34px;letter-spacing:0.6px}
+    p.lead{margin-top:6px;color:var(--muted);font-style:italic}
+
+    .letter{margin-top:26px;line-height:1.7;font-size:18px;padding:18px 22px;border-left:4px solid rgba(212,175,127,0.3);background:linear-gradient(180deg, rgba(255,255,255,0.4), transparent);border-radius:12px}
+    .signature{margin-top:18px;text-align:right;font-weight:700;color:var(--text)}
+
+    .hearts{position:fixed;right:12px;bottom:12px;width:120px;height:120px;pointer-events:none}
+    .heart{position:absolute;width:18px;height:18px;background:var(--accent);transform:rotate(45deg);border-radius:4px 0 0 4px;opacity:0.9}
+    .heart:before,.heart:after{content:'';position:absolute;background:var(--accent);width:18px;height:18px;border-radius:50%}
+    .heart:before{top:-9px;left:0}
+    .heart:after{left:9px;top:0}
+
+    /* simple float animation for multiple hearts */
+    @keyframes floatUp{0%{transform:translateY(0) scale(0.8) rotate(45deg);opacity:0.9}100%{transform:translateY(-260px) scale(1.3) rotate(45deg);opacity:0}}
+    .heart.h1{left:12px;bottom:8px;animation:floatUp 7s linear infinite;animation-delay:0s}
+    .heart.h2{left:48px;bottom:16px;animation:floatUp 6.5s linear infinite;animation-delay:1s}
+    .heart.h3{left:80px;bottom:6px;animation:floatUp 8s linear infinite;animation-delay:0.6s}
+    .heart.h4{left:28px;bottom:32px;animation:floatUp 9s linear infinite;animation-delay:2s}
+
+    footer{margin-top:20px;display:flex;gap:12px;align-items:center;justify-content:space-between}
+    .qrbox{display:flex;gap:10px;align-items:center}
+    .qr{width:86px;height:86px;border-radius:10px;background:linear-gradient(180deg,#fff,#ffeef6);display:flex;align-items:center;justify-content:center;border:1px solid rgba(0,0,0,0.06)}
+    .btn{background:var(--accent);border:none;padding:10px 14px;border-radius:12px;color:#fff;font-weight:700;cursor:pointer;box-shadow:0 6px 18px rgba(212,175,127,0.12)}
+    .muted{color:var(--muted);font-size:14px}
+    .small{font-size:13px;color:var(--muted)}
+
+    /* responsive */
+    @media (max-width:520px){.container{margin:18px;padding:20px}.badge{width:64px;height:64px;font-size:22px}h1{font-size:24px}}
+  </style>
+</head>
+<body>
+  <div class="container" role="main">
+    <header>
+      <div class="badge">💐</div>
+      <div>
+        <h1>Para Milagros</h1>
+        <div class="lead">Una carta que espero la abrace cada vez que la leas.</div>
+      </div>
+    </header>
+
+    <article class="letter" aria-label="Carta de amor para Milagros">
+      <p>Milagros,</p>
+
+      <p>Hay días en los que todo parece ordinario hasta que llega tu nombre en mi pensamiento y entonces el mundo se vuelve textura fina: la luz tiene otro brillo, el silencio un volumen nuevo, y las cosas pequeñas se sienten infinitas. Te escribo esto con la urgencia de quien guarda un tesoro y quiere compartirlo —no para contenerlo, sino para que exista también en voz alta.</p>
+
+      <p>Me enamoré de tus gestos más que de tus palabras: de la manera en que sonríes sin buscarla, de cómo tus manos cuentan historias cuando no hablas, de esa calma que traes cuando todo afuera hace ruido. Me enamoré también de tus grietas, porque me enseñaron a ser paciente; de tus dudas, porque rescatan la ternura; y de tus pasiones, porque me invitan a mirar el mundo desde otro lugar.</p>
+
+      <p>No prometo que todo será perfecto, pero sí te prometo presencia: estar cuando quieras compartir una risa o una inquietud; escuchar todavía cuando creas que nadie lo hace; ser abrigo en días fríos y celebrar contigo los minutos luminosos. Quiero aprender tus silencios para que no se vuelvan soledad, y quiero escribir contigo pequeñas huellas que el tiempo recuerde con cariño.</p>
+
+      <p>Si alguna vez dudas del lugar que ocupas en mi vida, esta página será un recordatorio: sos la canción que mi día aprende de memoria, la pausa más dulce entre mis apuros. Me inspiras a ser mejor sin presionarme; me invitas a mirar con ternura. Cada palabra que aquí lees surge de las cosas que veo en vos cuando nadie está mirando: la fuerza sutil, el afecto escondido, la generosidad que no presume.</p>
+
+      <p>Guarda este mensaje en un bolsillo del alma. Léelo cuando necesites calor, cuando quieras recordar que alguien celebra tu existencia. Y si un día te parece que las palabras no alcanzan, acerco mi mano y la dejo allí para que lo diga el silencio.</p>
+
+      <p class="signature">Con todo mi cariño,<br/>Siempre tuyo.</p>
+    </article>
+
+    <footer>
+      <div class="qrbox">
+        <div class="qr" id="qrPreview">QR</div>
+        <div class="small">Escanea este QR para ver esta tarjeta en tu teléfono.<br/>(O recibe la página completa aquí.)</div>
+      </div>
+
+      <div style="display:flex;gap:8px;align-items:center">
+        <button class="btn" id="playBtn">▶︎ Reproducir música</button>
+        <div class="muted">Música: instrumental suave (piano y cuerdas)</div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="hearts" aria-hidden="true">
+    <div class="heart h1"></div>
+    <div class="heart h2"></div>
+    <div class="heart h3"></div>
+    <div class="heart h4"></div>
+  </div>
+
+  <!-- AUDIO: reemplaza la URL de 'src' por la que prefieras, o sube un archivo 'music.mp3' al mismo directorio y usa "music.mp3" -->
+  <audio id="bgMusic" loop preload="auto">
+    <source src="music.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio.
+  </audio>
+
+  <script>
+    // Control simple de audio
+    const audio = document.getElementById('bgMusic');
+    const btn = document.getElementById('playBtn');
+    let playing = false;
+    btn.addEventListener('click', ()=>{
+      if(!playing){
+        audio.play();
+        btn.textContent = '⏸︎ Pausar música';
+        playing = true;
+      } else {
+        audio.pause();
+        btn.textContent = '▶︎ Reproducir música';
+        playing = false;
+      }
+    });
+
+    // Generar QR local (usa la API de canvas para dibujar un QR simple con librería mínima)
+    // Aquí generamos un QR básico usando una API pública si existe; para máxima compatibilidad,
+    // cuando subas la página a un hosting copia la URL final y reemplaza la variable pageUrl.
+    (function(){
+      const qrBox = document.getElementById('qrPreview');
+      // Intenta usar la URL actual (útil si la page ya está online)
+      const pageUrl = location.href;
+
+      // Dibujamos un QR usando la API de Google Chart (si está disponible). Si la página se abre localmente,
+      // el QR llevará a la ruta file://... que algunos escáneres no interpretan. Mejor subir la página a hosting
+      // y luego actualizar el src del QR con la URL final.
+      const img = document.createElement('img');
+      try{
+        const qrSrc = 'https://chart.googleapis.com/chart?cht=qr&chs=180x180&chl=' + encodeURIComponent(pageUrl);
+        img.src = qrSrc;
+        img.alt = 'QR de la tarjeta';
+        img.style.width = '86px';
+        img.style.height = '86px';
+        img.style.borderRadius = '8px';
+        qrBox.innerHTML = '';
+        qrBox.appendChild(img);
+      } catch(e){
+        qrBox.textContent = 'QR no disponible';
+      }
+    })();
+  </script>
+</body>
+</html>
